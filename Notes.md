@@ -282,3 +282,21 @@ src/pages/about.astro
 
 * But, you still need to make these pages discoverable from other pages on your website.
 
+# Add an RSS feed
+
+> npm install @astrojs/rss
+
+* Create a new file in src/pages/ called rss.xml.js https://docs.astro.build/en/tutorial/5-astro-api/4/
+* Add the site property to the Astro config with your site’s own unique Netlify URL. https://astro-tutorial-2114d9.netlify.app/
+* This rss.xml document is only created when your site is built, so you won’t be able to see this page in your browser during development
+* Quit the dev server and run the following commands to first, build your site locally and then, view a preview of your build:
+
+> npm run build
+
+> npm run preview
+
+* Visit http://localhost:4321/rss.xml
+
+* Download a feed reader, or sign up for an online feed reader service and subscribe to your site by adding your own Netlify URL. You can also share this link with others so they can subscribe to your posts, and be notified when a new one is published.
+
+* 
