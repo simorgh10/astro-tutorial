@@ -131,4 +131,10 @@ src/pages/about.astro
 
 * Update your existing <style> tag below to first define, then use this skillColor variable inside double curly braces.
 
-* 
+# Add site⁠-⁠wide styling
+
+* Add a global stylesheet
+* in this tutorial, you will create and import a global.css file into each of your pages.
+* Create a new file at the location src/styles/global.css https://docs.astro.build/en/tutorial/2-pages/5/
+* In about.astro, add the following import statement to your frontmatte
+* When conflicting styles are defined both globally and in a page’s local <style> tag, the local styles should overwrite any global styles. (But, there can be other factors involved, so always visually inspect your site to make sure your styles are properly applied!)
