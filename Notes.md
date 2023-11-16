@@ -77,3 +77,13 @@ https://golden-pie-2114d9.netlify.app/
 * Copy, or retype the contents of index.astro into your new about.astro file.
 * Under the File menu in VS Code, enable “Auto Save” and you should no longer need to save any files manually.
 * Add /about to the end of your website preview’s URL in the address bar and check that you can see a page load there. (e.g. http://localhost:4321/about)
+
+* To make it easier to preview all your pages, add HTML page navigation links before your <h1> at the top of both of your pages (index.astro and about.astro):
+
+src/pages/about.astro
+
+* Unlike many frameworks, Astro uses standard HTML <a> elements to navigate between pages (also called routes), with traditional page refreshes.
+
+* Add a third page blog.astro
+
+* 
