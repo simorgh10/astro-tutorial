@@ -145,4 +145,17 @@ src/pages/about.astro
 * If there is nothing in the frontmatter of your .astro file, you don’t have to write the code fences. You can always add them back in when you need them.
 
 * Go back to index.astro and import your new component inside the code fence:
-* 
+
+# Create a social media footer
+* Create a new file at the location src/components/Footer.astro
+* https://docs.astro.build/en/tutorial/3-components/2/
+
+* Since you might have multiple online accounts you can link to, you can make a single, reusable component and display it multiple times. Each time, you will pass it different properties (props) to use: the online platform and your username there.
+
+* Create a new file at the location src/components/Social.astro https://docs.astro.build/en/tutorial/3-components/2/
+* Change the code in src/components/Footer.astro to import, then use this new component three times, passing different component attributes as props each time:
+
+
+* Customize the appearance of your links by adding a <style> tag to src/components/Social.astro.
+
+* Add a <style> tag to src/components/Footer.astro to improve the layout of its contents.
