@@ -138,3 +138,11 @@ src/pages/about.astro
 * Create a new file at the location src/styles/global.css https://docs.astro.build/en/tutorial/2-pages/5/
 * In about.astro, add the following import statement to your frontmatte
 * When conflicting styles are defined both globally and in a page’s local <style> tag, the local styles should overwrite any global styles. (But, there can be other factors involved, so always visually inspect your site to make sure your styles are properly applied!)
+
+# Make a reusable Navigation component
+* To hold .astro files that will generate HTML but that will not become new pages on your website, you will need a new folder in your project:src/components/
+* Create a new file: src/components/Navigation.astro https://docs.astro.build/en/tutorial/3-components/1/. Copy your links to navigate between pages from the top of any page and paste them into your new file, Navigation.astro
+* If there is nothing in the frontmatter of your .astro file, you don’t have to write the code fences. You can always add them back in when you need them.
+
+* Go back to index.astro and import your new component inside the code fence:
+* 
