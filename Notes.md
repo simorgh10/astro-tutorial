@@ -48,3 +48,32 @@ https://github.com/simorgh10/astro-tutorial
 
 * Lastly, the list of changed files should be replaced with a Publish button. Click this to send your committed changes to GitHub.
 
+* or 
+
+> git remote add origin https://github.com/simorgh10/astro-tutorial.git
+
+> git push --set-upstream origin master
+
+
+# Deploy your site to the web
+
+* https://app.netlify.com/teams/simorgh10/overview
+
+* Click Add new site > Import an existing project.
+
+* You will be asked to connect to a Git provider. Choose GitHub and follow the steps onscreen to authenticate your GitHub account. Then, choose your Astro project’s GitHub repository from the list provided.
+
+* At the final step, Netlify will show you your app’s site settings. The defaults should be correct for your Astro project, so you can scroll down and click Deploy site.
+
+* You can change your project name to something more memorable, and this will automatically update your URL.
+
+https://golden-pie-2114d9.netlify.app/
+
+* Domain management > Production domains > Options > Edit site name : https://astro-tutorial-2114d9.netlify.app/
+
+# Create your first Astro page
+
+* navigate to the folder src/pages/ where you will see the existing file index.astro, create a new file named about.astro.
+* Copy, or retype the contents of index.astro into your new about.astro file.
+* Under the File menu in VS Code, enable “Auto Save” and you should no longer need to save any files manually.
+* Add /about to the end of your website preview’s URL in the address bar and check that you can see a page load there. (e.g. http://localhost:4321/about)
