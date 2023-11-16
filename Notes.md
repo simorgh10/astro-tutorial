@@ -214,3 +214,15 @@ src/pages/about.astro
 * Pass the page title to your layout component from index.astro using a component attribute:
 
 * Change the script of your BaseLayout.astro layout component to receive a page title via Astro.props instead of defining it as a constant.
+
+# Create and pass data to a custom blog layout
+
+* When you include the layout frontmatter property in an .md file, all of your frontmatter YAML values are available to the layout file.
+
+* Create a new file at src/layouts/MarkdownPostLayout.astro
+
+* Add the following frontmatter property in post-1.md
+
+* When using layouts, you now have the option of including elements, like a page title, in the Markdown content or in the layout. Remember to visually inspect your page preview and make any adjustments necessary to avoid duplicated elements.
+
+* 
