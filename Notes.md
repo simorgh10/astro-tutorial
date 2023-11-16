@@ -225,4 +225,7 @@ src/pages/about.astro
 
 * When using layouts, you now have the option of including elements, like a page title, in the Markdown content or in the layout. Remember to visually inspect your page preview and make any adjustments necessary to avoid duplicated elements.
 
-* 
+# Combine layouts to get the best of both worlds
+
+* In src/layouts/MarkdownPostLayout.astro, import BaseLayout.astro and use it to wrap the entire template content. Don’t forget to pass the pageTitle prop:
+
