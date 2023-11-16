@@ -86,4 +86,24 @@ src/pages/about.astro
 
 * Add a third page blog.astro
 
-* 
+# Write your first Markdown blog post
+
+* Create a new directory at src/pages/posts/.
+* Add a new (empty) file post-1.md inside your new /posts/ folder.
+* Look for this page in your browser preview by adding /posts/post-1 to the end of your existing preview URL. (e.g. http://localhost:4321/posts/post-1)
+* Change the browser preview URL to view /posts/post-2 instead. (This is a page you have not yet created.)
+* Note the different output when previewing an “empty” page, and one that doesn’t exist. This will help you troubleshoot in the future.
+
+* Copy or type the following code into post-1.md https://docs.astro.build/en/tutorial/2-pages/2/
+
+* Check your browser preview again at http://localhost:4321/posts/post-1. You should now see content on this page. It may not yet be properly formatted, but don’t worry, you will update this later in the tutorial!
+
+* Use your browser’s Dev Tools to inspect this page. Notice that although you have not typed any HTML elements, your Markdown has been converted to HTML. You can see elements such as headings, paragraphs, and list items.
+
+* The information at the top of the file, inside the code fences, is called frontmatter. This data—including tags and a post image—is information about your post that Astro can use. It does not appear on the page automatically, but you will access it later in the tutorial to enhance your site.
+
+* Link to your first post with an anchor tag in src/pages/blog.astro 
+
+* Now, add two more files in src/pages/posts/: post-2.md and post-3.md. Here is some sample code you can copy and paste into your files, or, you can create your own!
+
+* Check your browser preview and make sure that: All your links for Post 1, Post 2, and Post 3 lead to a working page on your site. 
