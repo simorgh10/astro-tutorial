@@ -239,3 +239,30 @@ src/pages/about.astro
 * Add a new blog post by creating a new post-4.md file in src/pages/posts/ and adding some Markdown content. Be sure to include at least the frontmatter properties used below.
 
 * create BlogPost component
+
+# Generate tag pages
+
+* You can create entire sets of pages dynamically using .astro files that export a getStaticPaths() function.
+
+* Create a new file at src/pages/tags/[tag].astro.
+
+* The getStaticPaths function returns an array of page routes, and all of the pages at those routes will use the same template defined in the file.
+
+* Make sure that every blog post contains at least one tag, written as an array, e.g. tags: ["blogging"].
+
+* Add the following props to your getStaticPaths() function in order to make data from all your blog posts available to each page route.
+
+* Filter your list of posts to only include posts that contain the page’s own tag.
+
+* If you need information to construct the page routes, write it inside getStaticPaths().
+
+* To receive information in the HTML template of a page route, write it outside getStaticPaths().
+
+* Your tag pages are now defined statically in [tag].astro. If you add a new tag to a blog post, you will also have to revisit this page and update your page routes.
+
+* The following example shows how to replace your code on this page with code that will automatically look for, and generate pages for, each tag used on your blog pages.
+
+* Create an array of all your existing tags
+
+* Replace the return value of the getStaticPaths function
+
