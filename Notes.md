@@ -266,3 +266,19 @@ src/pages/about.astro
 
 * Replace the return value of the getStaticPaths function
 
+# Build a tag index page
+
+* Add a new page using the /pages/folder/index.astro routing pattern
+* Display a list of all your unique tags, linking to each tag page
+* Update your site with navigation links to this new Tags page
+
+* Create a new file index.astro in the directory src/pages/tags/.
+* Create a minimal page at src/pages/tags/index.astro that uses your layout. You have done this before!
+
+* Create an array of tags
+* In src/pages/tags/index.astro, add the line of code to the frontmatter script that will give your page access to the data from every .md blog post file.
+
+* Add this page to your navigation
+
+* But, you still need to make these pages discoverable from other pages on your website.
+
