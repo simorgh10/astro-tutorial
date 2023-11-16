@@ -201,4 +201,16 @@ src/pages/about.astro
 
 * Create src/scripts/menu.js
 
-* 
+# Build your first layout
+
+* Create a new file at the location src/layouts/BaseLayout.astro. (You will need to create a new layouts folder first.)
+
+* Replace the code at src/pages/index.astro
+
+* Add a <slot /> element to src/layouts/BaseLayout.astro just above the footer component, then check the browser preview of your Home page and notice what really did change this time!
+
+* The <slot /> allows you to inject (or “slot in”) child content written between opening and closing <Component></Component> tags to any Component.astro file.
+
+* Pass the page title to your layout component from index.astro using a component attribute:
+
+* Change the script of your BaseLayout.astro layout component to receive a page title via Astro.props instead of defining it as a constant.
