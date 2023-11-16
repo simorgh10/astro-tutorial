@@ -159,3 +159,28 @@ src/pages/about.astro
 * Customize the appearance of your links by adding a <style> tag to src/components/Social.astro.
 
 * Add a <style> tag to src/components/Footer.astro to improve the layout of its contents.
+
+# Build it yourself ⁠-⁠ Header
+
+* Create a new Header component. Import and use your existing Navigation.astro component inside a <nav> element which is inside a <header> element.
+
+* On each page, replace your existing <Navigation/> component with your new header.
+
+* Check your browser preview and verify that your header is displayed on every page. It won’t look different yet, but if you inspect your preview using dev tools, you will see that you now have elements like <header> and <nav> around your navigation links.
+
+* Update Navigation.astro with the CSS class to control your navigation links. Wrap the existing navigation links in a <div> with the class nav-links.
+
+* Copy the CSS styles below into global.css. These styles: https://docs.astro.build/en/tutorial/3-components/3/
+  + Style and position the navigation links for mobile
+  + Include an expanded class that can be toggled to display or hide the links on mobile
+  + Use a @media query to define different styles for larger screen sizes
+
+* MOBILE-FIRST DESIGN: Start by defining what should happen on small screen sizes first! Smaller screen sizes require simpler layouts. Then, adjust your styles to accommodate larger devices. If you design the complicated case first, then you have to work to try to make it simple again.
+
+* CSS PS: https://developer.mozilla.org/en-US/docs/Web/CSS/unset The unset CSS keyword resets a property to its inherited value if the property naturally inherits from its parent, and to its initial value if not.
+
+* Resize your window and look for different styles being applied at different screen widths. Your header is now responsive to screen size through the use of @media queries.
+
+
+
+* 
