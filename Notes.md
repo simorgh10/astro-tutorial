@@ -181,6 +181,24 @@ src/pages/about.astro
 
 * Resize your window and look for different styles being applied at different screen widths. Your header is now responsive to screen size through the use of @media queries.
 
+# Send your first script to the browser
 
+* Let’s add a hamburger menu to open and close your links on mobile screen sizes, requiring some client-side interactivity!
+
+* Create a file named Hamburger.astro in src/components/ https://docs.astro.build/en/tutorial/3-components/4/
+
+* This will represent your 3-line “hamburger” menu to open and close your navigation links on mobile. (You will add the new CSS styles to global.css later.)
+
+* Place this new <Hamburger /> component just before your <Navigation /> component in Header.astro.
+
+* Add the following styles for your Hamburger component: https://docs.astro.build/en/tutorial/3-components/4/
+
+* Your header is not yet interactive because it can’t respond to user input, like clicking on the hamburger menu to show or hide the navigation links.
+
+* Add the following <script> tag to index.astro, just before the closing </body> tag.
+
+* nstead of writing your JavaScript directly on each page, you can move the contents of your <script> tag into its own .js file in your project.
+
+* Create src/scripts/menu.js
 
 * 
