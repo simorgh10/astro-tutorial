@@ -299,4 +299,32 @@ src/pages/about.astro
 
 * Download a feed reader, or sign up for an online feed reader service and subscribe to your site by adding your own Netlify URL. You can also share this link with others so they can subscribe to your posts, and be notified when a new one is published.
 
+# Build your first Astro island
+
+* Add Preact to your Astro project
+
+> npx astro add preact
+
+* Include Astro islands (Preact .jsx components) on your home page
+
+* Use client: directives to make islands interactive
+
+* Create a new file in src/components/ named Greeting.jsx
+
+* Import and use this component on your Home page index.astro.
+
+* Check the preview in your browser: you should see a random greeting, but the button won’t work!
+
+* Add a second <Greeting /> component with the client:load directive.
+
+* The second button works because the client:load directive tells Astro to send and rerun its JavaScript on the client when the page loads, making the component interactive. This is called a hydrated component.
+
+* Once the difference is clear, remove the non-hydrated Greeting component.
+
+* There are other client: directives to explore. Each sends the JavaScript to the client at a different time. client:visible, for example, will only send the component’s JavaScript when it is visible on the page.
+
+https://docs.astro.build/en/tutorial/6-islands/1/
+
+* The component with the client:load directive will rerender after the page is loaded, and any interactive elements that it has will work.
+
 * 
