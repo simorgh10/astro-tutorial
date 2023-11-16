@@ -229,3 +229,13 @@ src/pages/about.astro
 
 * In src/layouts/MarkdownPostLayout.astro, import BaseLayout.astro and use it to wrap the entire template content. Don’t forget to pass the pageTitle prop:
 
+# Create a blog post archive
+
+* Access data from all your posts at once using Astro.glob()
+* Display a dynamically generated list of posts on your Blog page
+* Refactor to use a <BlogPost /> component for each list item
+
+* To generate the entire list of posts dynamically, using the post titles and URLs, replace your individual <li>
+* Add a new blog post by creating a new post-4.md file in src/pages/posts/ and adding some Markdown content. Be sure to include at least the frontmatter properties used below.
+
+* create BlogPost component
