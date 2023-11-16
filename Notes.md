@@ -107,3 +107,15 @@ src/pages/about.astro
 * Now, add two more files in src/pages/posts/: post-2.md and post-3.md. Here is some sample code you can copy and paste into your files, or, you can create your own!
 
 * Check your browser preview and make sure that: All your links for Post 1, Post 2, and Post 3 lead to a working page on your site. 
+
+# Add dynamic content about you
+
+* Define and use a variable. Add the following line of JavaScript in the frontmatter script in about.astro, between the code fences: https://docs.astro.build/en/tutorial/2-pages/3/
+
+* Replace both the static “Astro” title and “About Me” heading in your HTML with the dynamic variable {pageTitle}.
+
+* Add the following JavaScript to your frontmatter, between the code fences:https://docs.astro.build/en/tutorial/2-pages/3/
+
+* Add the following lines to your frontmatter script to define variables: https://docs.astro.build/en/tutorial/2-pages/3/
+
+* 
