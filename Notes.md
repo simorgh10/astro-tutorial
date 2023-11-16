@@ -118,4 +118,17 @@ src/pages/about.astro
 
 * Add the following lines to your frontmatter script to define variables: https://docs.astro.build/en/tutorial/2-pages/3/
 
+* Astro’s templating syntax is similar to JSX syntax. If you’re ever wondering how to use your script in your HTML, then searching for how it is done in JSX is probably a good starting point!
+
+# Style your About page
+
+* Copy the following code and paste it into src/pages/about.astro https://docs.astro.build/en/tutorial/2-pages/4/
+* Add the class name skill to the generated <li> elements on your About page, so you can style them. Your code should now look like this:
+
+* The Astro <style> tag can also reference any variables from your frontmatter script using the define:vars={ {...} } directive. You can define variables within your code fence, then use them as CSS variables in your style tag.
+
+* Define a skillColor variable by adding it to the frontmatter script of src/pages/about.astro
+
+* Update your existing <style> tag below to first define, then use this skillColor variable inside double curly braces.
+
 * 
