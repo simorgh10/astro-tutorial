@@ -1,5 +1,9 @@
 https://docs.astro.build/en/tutorial/1-setup/2/
 
+https://github.com/withastro/blog-tutorial-demo/tree/complete
+
+https://github.com/simorgh10/astro-tutorial/
+
 # Setup
 
 > npm create astro@latest
@@ -337,10 +341,15 @@ https://docs.astro.build/en/tutorial/6-islands/1/
 
 * Create a new file at src/components/ThemeIcon.astro https://docs.astro.build/en/tutorial/6-islands/2/
 
+https://stackoverflow.com/questions/43613619/what-does-global-colon-global-do
+
 * The :global operator is used in CSS Modules. Modular CSS uses a CSS Modules compiler to scope CSS styles within their respective modules (e.g., React component).
+
+* :global switches to global scope for the current selector resp. identifier. :global(.xxx) resp. @keyframes :global(xxx) declares the stuff in parenthesis in the global scope.
 
 * Add the icon to Header.astro so that it will be displayed on all pages. Don’t forget to import the component.
 
 * o add interactivity to an Astro component, you can use a <script> tag. This script can check and set the current theme from localStorage and toggle the theme when the icon is clicked. Add the following <script> tag in src/components/ThemeIcon.astro after your <style> tag: https://docs.astro.build/en/tutorial/6-islands/2/
 
 * You need to write the script inside <script is:inline></script> if you want to use things like window or document. This way Astro won't touch your JS and include it directly on the HTML.
+
